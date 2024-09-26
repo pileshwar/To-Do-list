@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/184/537/original/red-and-blue-dark-abstract-space-background-wormhole-spiral-tunnel-video.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #ca0b0b, -6px -6px 12px #4aa6f1;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: calc(100% - px);
+    padding: 20px;
+    margin-right: 10px;
+    border: 1px solid #161414;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #692525, -6px -6px 12px #358fd8;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #4536ce 0%, #e60b0b 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+}
